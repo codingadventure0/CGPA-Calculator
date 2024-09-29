@@ -17,4 +17,14 @@ def cpga_calculator():
     cgpa = total_grade_points / total_credits
     result.config(text=f"CGPA: {cgpa:.2f}")
     
+    
+labels = ["Course Name", "Credit", "Grade"]
+for i, text in enumerate(labels):
+    ttk.Label(frame, text=text, background="yellow", font=("Arial", 12, "bold")).grid(row=0, column=i, padx=10, pady=5, sticky="ew")
+
+
+
+
+
+
 root.mainloop()
