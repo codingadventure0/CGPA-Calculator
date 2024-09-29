@@ -1,9 +1,6 @@
 # CGPA-Calculator
 
 ---
-
-# CGPA Calculator
-
 This is a simple graphical CGPA (Cumulative Grade Point Average) calculator created using Python and the `Tkinter` library. It allows users to input their course names, credit hours, and grades, and calculates the CGPA based on the provided information.
 
 ## Features
@@ -74,7 +71,7 @@ The application is built using the `Tkinter` library. The main components of the
 - **add_course_row()**: This function dynamically adds more rows to the form for additional courses.
 - **Grade points dictionary**: It maps the letter grades (A+, A, B+, etc.) to numerical values (10, 9, 8, etc.).
 
-## Screenshots
+<!-- ## Screenshots -->
 
 
 ---
