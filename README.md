@@ -12,7 +12,7 @@ This is a simple graphical CGPA (Cumulative Grade Point Average) calculator crea
 
 ## How It Works
 
-<!-- ### Formula -->
+### Formula
 
 <!-- The formula for calculating the CGPA is:
 
@@ -46,7 +46,7 @@ Where the grade points are assigned based on the following grading system:
    - The "Calculate CGPA" button computes the CGPA based on the provided information.
    - If there are any errors (e.g., invalid input, or total credits being zero), an error message will be displayed.
 
-<!-- ### Example: -->
+### Example:
 
 
 ## Running the Application
