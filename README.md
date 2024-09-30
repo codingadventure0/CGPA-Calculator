@@ -13,6 +13,7 @@ This is a simple graphical CGPA (Cumulative Grade Point Average) calculator crea
 ## How It Works
 
 ### Formula
+![cgpa-calculator(1)](https://github.com/user-attachments/assets/9c30f805-4e56-4b5d-b555-bc58117ee139)
 
 <!-- The formula for calculating the CGPA is:
 
@@ -47,6 +48,7 @@ Where the grade points are assigned based on the following grading system:
    - If there are any errors (e.g., invalid input, or total credits being zero), an error message will be displayed.
 
 ### Example:
+![cgpa-calculator(2)](https://github.com/user-attachments/assets/e5132c99-2eac-4737-9578-455761ef34fe)
 
 
 ## Running the Application
