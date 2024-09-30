@@ -1,27 +1,35 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 
+# Initialize the main window
 root = tk.Tk()
 root.title("CGPA Calculator")
 root.geometry("600x400")
 
+# Create a frame to hold the input fields and buttons
 frame = ttk.Frame(root, padding="10")
 frame.pack(expand=1, fill="both")
 
+# List to hold all course entries (course name, credit, grade)
 course_rows = []
 
+# Function to calculate the CGPA based on inputted courses
 def cpga_calculator():
     total_credits = total_grade_points = 0
+    
+    # Dictionary to map grades to their grade points
     grade_points_dict = {"A+":10, "A":9, "B+":8, "B":7, "C":6, "D":5, "F":0}
 
     for course_name, course_credit, grade_list in course_rows:
         try:
+            # Convert the credit input to a float and get the selected grade
             credits = float(course_credit.get())
             grade = grade_list.get()
             
             if grade not in grade_points_dict:
                 raise ValueError("Invalid grade selected")
             
+            # Add to total credits and calculate total grade points
             total_credits += credits
             total_grade_points += credits * grade_points_dict[grade]
             
@@ -37,8 +45,10 @@ def cpga_calculator():
     result.config(text=f"CGPA: {cgpa:.2f}")
     
 
+# Function to add a new row for a course input
 def add_course_row(frame):
     row = len(course_rows) + 1
+    # Create input fields for course name, credits, and grade
     course_name = tk.Entry(frame, font=("Arial", 10), relief="solid", borderwidth=2)
     course_name.grid(row=row, column=0, padx=10, pady=5, sticky="ew")
     
